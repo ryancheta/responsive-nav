@@ -11,10 +11,10 @@ burger_menu.addEventListener('click', () => {
     mobile_nav.classList.toggle('nav-active');
     burger_menu.classList.toggle('toggle-menu'); 
 
-    // document.body.style.backgroundColor = 'black';
+    // animation of nav-links
     navLinks.forEach( ( link, index ) => {
         if( link.style.animation ){
-            link.style.animation = ' ';
+            link.style.animation = '';
         } else {
             link.style.animation = `navLinkFade .75s ease forwards ${index / 7 + 0.3}s`
         }

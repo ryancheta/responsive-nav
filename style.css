@@ -6,7 +6,8 @@
 
 body{
     font-family: 'Heebo', sans-serif;
-    font-family:  'Montserrat', sans-serif
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-family:  'Montserrat', sans-serif;
 }
 
 nav{
@@ -33,15 +34,21 @@ nav{
     font-size: 1.8vh;
 }
 
-.navbar .nav-links li{
+.nav-links li{
     list-style: none;
     padding: 26px;
+    transition: background 0.85s ease;
 }
 
 .nav-links a{
     letter-spacing: 1.5px;
     text-decoration: none;
     text-transform: uppercase;
+    padding-bottom: 4px;
+}
+
+.nav-links li:hover{
+    background: white;
 }
 
 .buger-menu,
@@ -67,7 +74,9 @@ nav{
     .burger-menu{ 
         display: block; 
         cursor: pointer;
-    }
+    }   
+    
+    .nav-links li:hover{ background: none;}
 
     .nav-links{
         z-index: 1;
